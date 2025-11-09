@@ -1,0 +1,173 @@
+.clause-floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 999999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .clause-floating-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .clause-btn-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .clause-icon {
+    font-size: 20px;
+  }
+  
+  .clause-text {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .clause-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999999;
+    overflow-y: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  .clause-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .clause-sidebar-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #clause-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .clause-sidebar-content {
+    padding: 20px;
+  }
+  
+  .clause-risk-score {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .clause-risk-score.high {
+    background: #fee;
+    color: #c00;
+  }
+  
+  .clause-risk-score.medium {
+    background: #ffeaa7;
+    color: #d63031;
+  }
+  
+  .clause-risk-score.low {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .clause-violation {
+    border-left: 4px solid;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  .clause-violation.high {
+    border-color: #c00;
+    background: #fee;
+  }
+  
+  .clause-violation.medium {
+    border-color: #ff9800;
+    background: #fff3e0;
+  }
+  
+  .clause-violation.low {
+    border-color: #4caf50;
+    background: #e8f5e9;
+  }
+  
+  .violation-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .violation-description {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .violation-law {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .clause-full-report-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .clause-full-report-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Spinner animation */
+  .clause-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: clause-spin 0.8s linear infinite;
+  }
+  
+  @keyframes clause-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
